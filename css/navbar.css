@@ -1,0 +1,100 @@
+body{
+    --turquoise:#52908B;
+    --sable:#DCDACD;
+    --grisFonce: #656565;
+    --noir: #2c2c2c;
+    font-family: 'Halant', serif;
+}
+
+
+/*********** Background ***********/
+    /* modifie le dropdown en petit format */
+    @media (max-width: 991px) {
+        .bgMini{
+            background-color: #467974;
+            /* background-color: #4B706E; */
+            border: 1.5px white solid;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px 3px inset #233b39;
+        }
+    }
+
+/*********** liens (accueil, voyages etc) ***********/
+.li .a-class{
+    color: white !important;
+    font-size: 1.3em;
+}
+
+.li .a-class:hover{
+    color: var(--turquoise) !important;
+    background-color: white;
+    border-radius: 5px; 
+}
+
+
+/*********** dropdown de droite (user) ***********/
+.li div .a-class{
+    color: white;
+}
+
+.li div a:hover{
+    color: var(--turquoise);
+    background-color: white;
+    border-radius: 5px; 
+}
+
+.user {
+    margin-left: auto;
+}
+
+    @media (max-width: 991px) {
+        .user{
+            text-align: left;
+            justify-content: left;
+            align-items: left;
+            margin-right: auto;
+        }
+    }
+
+
+/*********** Titres à gauche ***********/
+.travelog{
+    color: white;
+    font-size: 2em;
+}
+
+.travelog:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width: 1152px) {
+    .search{
+       display: none !important;
+    }
+}
+
+
+/*********** trait de séparation ***********/
+.separateur{
+    background-color: white;
+    height: 3em;
+    width: 1px;
+}
+
+@media (max-width: 991px) {
+    .separateur{
+       display: none;
+    }
+}
+
+
+.mb-navbar{
+    margin-bottom: 8em !important;
+}
+
+
+.bgTurquoise{
+    background-color: var(--turquoise);
+}
